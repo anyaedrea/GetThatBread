@@ -1,0 +1,22 @@
+<!-- homepage with the search form -->
+<% layout('boilerplate') -%>
+<!-- <% layout('boilerplate') -%> will include the boilerplate template to this page -->
+<h1>Let's Get That Bread!</h1>
+<h2>Check your salary</h2>
+<form action="/search" method="GET">
+  <label for="inputJob">Select your position</label>
+  <select id="inputJob" name="job">
+    <!-- fill select with the jobs -->
+    <% for (let job of jobs) {%>
+    <option value="<%=job%>"><%=job%></option>
+    <%}%>
+  </select>
+  <label for="inputLocation">Select your location</label>
+  <select id="inputLocation" name="location">
+    <!-- fill select with the locations -->
+    <% for (let location of locations) {%>
+    <option value="<%=location%>"><%=location%></option>
+    <%}%>
+  </select>
+  <button>Check my salary</button>
+</form>
