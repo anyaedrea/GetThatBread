@@ -9,3 +9,8 @@ Let's Get That Bread is a project developed as part of All-Women Virtual Hackath
 3. In the project directory, run `npm ci` or `npm install` in the command prompt to download the dependencies.
 4. Run `node index.js` in the project directory.
 5. Open [localhost:3000](http://localhost:3000/) in your browser.
+
+## File Structure
+- index.js is for the server code
+- /public is the folder for stylesheets and any other static files (images, etc)
+- /views is the folder for page layouts
